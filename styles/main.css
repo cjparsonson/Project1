@@ -1,11 +1,12 @@
 /* Set background colour */
 html {
+  height: 100%;
   background-color: #525050;
 }
 
 header {
   margin: 1rem;
-  background-color: #676262;
+  background-color: #1b1919;
   color: #fff;
   padding: 1em;
   text-align: center;
@@ -17,7 +18,19 @@ header {
 
 nav {
   margin: 1rem;
-  min-height: 5vh;
+  min-height: 4vh;
+  background-color: #1b1919;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  border: black;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-radius: 30px;
+}
+
+body {
+  margin: 1rem;
   background-color: #676262;
   color: #fff;
   padding: 1em;
@@ -26,4 +39,64 @@ nav {
   border-style: solid;
   border-width: 0.5rem;
   border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+section {
+  margin: 1rem;
+  background-color: #1b1919;
+  color: #fff;
+  padding: 1em;
+  text-align: center;
+  border: black;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-radius: 30px;
+}
+
+footer {
+  margin: 1rem;
+  background-color: #1b1919;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  border: black;
+  border-style: solid;
+  border-width: 0.5rem;
+  border-radius: 30px;
+  max-block-size: ;
+}
+
+div.footer-box p {
+  font-size: large;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  color: rgb(161, 141, 27);
+}
+
+main {
+  flex-grow: 1;
+}
+
+nav a {
+  animation-duration: 3s;
+  animation-name: navslide;
+  color: #b1a528;
+  text-decoration: none;
+  padding: 1em;
+  font-size: 1.25em;
+}
+
+@keyframes navslide {
+  from {
+    margin-left: -100%;
+    margin-right: -100%;
+    width: 300%;
+  }
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
 }
